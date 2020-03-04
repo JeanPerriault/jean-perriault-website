@@ -1,0 +1,18 @@
+{
+  "global": {
+    "dark_theme": "Dark theme",
+    "light_theme": "Light theme"
+  },
+  "links": {
+    "home": "Home",
+    "about": "About",
+    "music": "Music",
+    "literature": "Literature"
+  },
+  "profile": {
+    "title": "Bienvenue"
+  },
+  "profile-head": {
+    "developer": "Front-end Developer"
+  }
+}

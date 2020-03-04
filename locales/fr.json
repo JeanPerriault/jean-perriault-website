@@ -1,0 +1,25 @@
+{
+  "global": {
+    "dark_theme": "Thème sombre",
+    "light_theme": "Thème clair"
+  },
+  "links": {
+    "home": "Accueil",
+    "about": "À propos",
+    "music": "Musique",
+    "literature": "Littérature"
+  },
+  "profile": {
+    "title": "Bienvenue",
+    "introduction": "Bienvenue sur le site de Jùan Alézaïs, El Jùanch0",
+    "quote1": "Je produis un code sous forme de <kbd>composants</kbd>, organisé, optimisé, documenté et testé, dans une architecture simple et évolutive.",
+    "profile": "Profil",
+    "lead": "Leader technique, développement Front-end",
+    "manage": "Gestion et développement de projets informatiques internationaux",
+    "ci": "Intégration continue",
+    "agile": "Méthodes agiles"
+  },
+  "profile-head": {
+    "developer": "{\"Développeur\": \"Front-end\"}"
+  }
+}

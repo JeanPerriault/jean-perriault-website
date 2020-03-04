@@ -1,0 +1,41 @@
+{
+  "global": {
+    "dark_theme": "Tema oscuro",
+    "light_theme": "Tema ligero"
+  },
+  "links": {
+    "home": "Inicio",
+    "about": "A proposito",
+    "music": "Música",
+    "literature": "Literatura"
+  },
+  "home": {
+    "title": "Bienvenida",
+    "introduction": "Bienvenido al sitio de Jùan Alézaïs, El Jùanch0"
+  },
+  "about": {
+    "title": "A proposito",
+    "introduction1": "Aquí encontrarás mi trabajo de los últimos 25 años",
+    "introduction2": "Los ablums y colecciones de textos aparecen en un orden aleatorio de acuerdo con sus visitas",
+    "introduction3": "Todas las canciones y textos son trabajos en progreso, pueden cambiar en cualquier momento",
+    "introduction4": "Puede solicitar más por correo electrónico, tendrá que ver qué es posible (CD, MP3, Libros, etc.)",
+    "introduction5": "Si desea apoyar mi trabajo, contácteme por correo electrónico"
+  },
+  "music": {
+    "title": "Música",
+    "search": "Buscar",
+    "album": "Álbum",
+    "back_to_albums": "Volver a los álbumes"
+  },
+  "literature": {
+    "title": "Literatura"
+  },
+  "error": {
+    "back_to_home": "Volver a la página de inicio",
+    "page_not_found": "La página solicitada no existe",
+    "other_error": "Se ha producido un error"
+  },
+  "profile-head": {
+    "developer": "Desarrollador Front-end"
+  }
+}
