@@ -1,22 +1,30 @@
-# jean-perriault
+# Jean Perriault Website
 
-> Jean Perriault Website
+Here are the build step to run this website locally.
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# Install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# Serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+# Build for production and launch server
 $ npm run build
 $ npm run start
 
-# generate static project
+# Generate static project
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Thanks
+
+Built using those wonderfull projects:
+* [Nuxt.js](https://nuxtjs.org))
+* [Vue.js](https://vuejs.org))
+* [npm]()
+* Plus all open source dependency modules under those woods
+
+A huge thanks to creators and communities (devs and docs) around those projects!
