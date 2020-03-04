@@ -50,6 +50,9 @@
       </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
+
+      <language-switcher></language-switcher>
+
       <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer"
@@ -58,10 +61,14 @@
       </v-btn>
     </v-app-bar>
     <v-content>
-      <v-container>
+    <v-container
+        class="pa-0"
+        fluid
+      >
         <nuxt />
       </v-container>
     </v-content>
+
     <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
@@ -79,6 +86,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+
     <v-footer
       :fixed="fixed"
       app
@@ -89,7 +97,12 @@
 </template>
 
 <script>
+import LanguageSwitcher from '~/components/LanguageSwitcher';
+
 export default {
+  components: {
+    LanguageSwitcher
+  },
   data () {
     return {
       clipped: false,
@@ -98,13 +111,13 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Profil',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Projets',
+          to: '/projets'
         }
       ],
       miniVariant: false,
