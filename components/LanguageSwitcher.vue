@@ -16,7 +16,10 @@
 <script>
 export default {
   props: {
-    locale: String
+    locale: {
+      type: String,
+      required: true
+    }
   },
   data: () => ({
   }),

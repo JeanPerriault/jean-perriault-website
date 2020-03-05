@@ -24,7 +24,7 @@
 
 <script>
 const mq = window.matchMedia('(prefers-color-scheme: dark)')
-console.error(mq)
+// console.error(mq)
 
 import ProfileMainLead from "~/components/profile/ProfileMainLead";
 import ProfileMainProfile from "~/components/profile/ProfileMainProfile";
