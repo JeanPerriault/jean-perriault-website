@@ -73,14 +73,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import Profile from '~/components/profile/Profile.vue'
 
 export default {
   components: {
-    Logo,
-    VuetifyLogo,
     Profile
   }
 }
