@@ -2,7 +2,7 @@ import { mount, createLocalVue } from '@vue/test-utils'
 import VueRouter from 'vue-router'
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-import Menu from '@/components/Menu';
+import DrawerMenu from '@/components/DrawerMenu';
 
 const localVue = createLocalVue()
 localVue.use(VueRouter)
@@ -16,12 +16,12 @@ describe('Menu', () => {
   })
 
   test('is a Vue instance', () => {
-    const wrapper = mount(Menu, { router, localVue, vuetify })
+    const wrapper = mount(DrawerMenu, { router, localVue, vuetify })
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 
   it('renders the correct markup', () => {
-    const wrapper = mount(Menu, { router, localVue, vuetify })
+    const wrapper = mount(DrawerMenu, { router, localVue, vuetify })
     expect(wrapper.html()).toContain(`<div role="list" class="v-list v-sheet v-sheet--tile theme--light"><a href="#/" class="v-list-item--active v-list-item v-list-item--link theme--light" tabindex="0" router="" role="listitem">
     <div class="v-list-item__action"><i aria-hidden="true" class="v-icon notranslate mdi mdi-apps theme--light"></i></div>
     <div class="v-list-item__content">

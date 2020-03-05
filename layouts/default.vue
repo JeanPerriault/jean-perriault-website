@@ -9,7 +9,7 @@
       fixed
       app
     >
-      <menu></menu>
+      <drawer-menu></drawer-menu>
     </v-navigation-drawer>
 
     <!-- Application bar -->
@@ -17,6 +17,7 @@
       :clipped-left="clipped"
       fixed
       app
+      hide-on-scroll
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-btn
@@ -89,19 +90,35 @@
     >
       <span>&copy; 2005 - {{ new Date().getFullYear() }}</span>
     </v-footer>
+
+    <v-btn
+      v-show="fab"
+      v-scroll="onScroll"
+      fab
+      root
+      fixed
+      bottom
+      right
+      small
+      @click.stop="toTop"
+    >
+      <v-icon>mdi-arrow-up</v-icon>
+    </v-btn>
   </v-app>
 </template>
 
 <script>
-import Menu from '~/components/Menu';
+import DrawerMenu from '~/components/DrawerMenu';
 import LanguageSwitcher from '~/components/LanguageSwitcher';
 
 export default {
   components: {
+    DrawerMenu,
     LanguageSwitcher
   },
   data () {
     return {
+      fab: false,
       clipped: false,
       drawer: false,
       fixed: false,
@@ -111,6 +128,16 @@ export default {
       title: 'Jean Perriault',
       locale: this.$store.state.locale
     }
+  },
+  methods: {
+    onScroll(e) {
+      if (typeof window === 'undefined') return;
+      const top = window.pageYOffset || e.target.scrollTop || 0;
+      this.fab = top > 20;
+    },
+    toTop() {
+      this.$vuetify.goTo(0);
+    }
   }
-}
+};
 </script>
