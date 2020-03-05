@@ -15,6 +15,9 @@
 
 <script>
 export default {
+  props: {
+    locale: String
+  },
   data: () => ({
   }),
   computed: {
@@ -42,7 +45,7 @@ export default {
   methods: {
     updateLanguageSwitcher(lang) {
       let subpath = '';
-      if (this.$store.state.locale === 'fr') {
+      if (this.locale === 'fr') {
         subpath = this.$route.fullPath.substr(1);
       }
       else {

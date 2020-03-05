@@ -1,5 +1,7 @@
 <template>
   <v-app dark>
+
+    <!-- Drawer -->
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -7,23 +9,10 @@
       fixed
       app
     >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+      <menu></menu>
     </v-navigation-drawer>
+
+    <!-- Application bar -->
     <v-app-bar
       :clipped-left="clipped"
       fixed
@@ -49,10 +38,13 @@
         <v-icon>mdi-minus</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
+
       <v-spacer />
 
-      <language-switcher></language-switcher>
-
+      <language-switcher
+        :locale="locale"
+      >
+      </language-switcher>
       <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer"
@@ -60,8 +52,10 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn>
     </v-app-bar>
+
+    <!-- Content -->
     <v-content>
-    <v-container
+      <v-container
         class="pa-0"
         fluid
       >
@@ -69,6 +63,7 @@
       </v-container>
     </v-content>
 
+    <!-- Drawer -->
     <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
@@ -87,6 +82,7 @@
       </v-list>
     </v-navigation-drawer>
 
+    <!-- Footer -->
     <v-footer
       :fixed="fixed"
       app
@@ -97,6 +93,7 @@
 </template>
 
 <script>
+import Menu from '~/components/Menu';
 import LanguageSwitcher from '~/components/LanguageSwitcher';
 
 export default {
@@ -108,22 +105,11 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Profil',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Projets',
-          to: '/projets'
-        }
-      ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Jean Perriault'
+      title: 'Jean Perriault',
+      locale: this.$store.state.locale
     }
   }
 }

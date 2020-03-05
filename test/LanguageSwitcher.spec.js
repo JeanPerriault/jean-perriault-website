@@ -1,35 +1,29 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import Vue from 'vue'
-import Vuex from 'vuex'
 import VueRouter from 'vue-router'
-
+import Vue from 'vue'
 import Vuetify from 'vuetify'
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 const localVue = createLocalVue()
-localVue.use(Vuex)
 localVue.use(VueRouter)
-Vue.use(Vuetify)
 const router = new VueRouter()
+Vue.use(Vuetify)
 const vuetify = new Vuetify()
 
 describe('LanguageSwitcher', () => {
-  let store
-
-  let state = () => ({
-    locales: ['fr', 'en', 'es'],
-    locale: 'fr'
-  });
 
   beforeEach(() => {
-    store = new Vuex.Store({
-      state
-    })
-
   })
 
   test('is a Vue instance', () => {
-    const wrapper = mount(LanguageSwitcher, { store, router, localVue, vuetify })
+    const wrapper = mount(LanguageSwitcher, { router, localVue, vuetify })
     expect(wrapper.isVueInstance()).toBeTruthy()
+  })
+
+  it('renders the correct markup', () => {
+    const wrapper = mount(LanguageSwitcher, { router, localVue, vuetify })
+    expect(wrapper.html()).toContain(`<div class="v-menu"><button type="button" class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-web theme--light"></i></span></button>
+  <!---->
+</div>`)
   })
 })
