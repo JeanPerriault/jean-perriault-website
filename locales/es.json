@@ -4,38 +4,29 @@
     "light_theme": "Tema ligero"
   },
   "links": {
-    "home": "Inicio",
-    "about": "A proposito",
-    "music": "Música",
-    "literature": "Literatura"
+    "profile": "Perfil",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "links": "Vínculos"
   },
-  "home": {
-    "title": "Bienvenida",
-    "introduction": "Bienvenido al sitio de Jùan Alézaïs, El Jùanch0"
+  "profile": {
+    "lead": "<kbd>Fuerza de la propuesta</kbd>, <kbd>ambicioso</kbd> y <kbd>exigente</kbd> en los proyectos emprendidos, <kbd>disponible</kbd> y <kbd>proactivo</ kbd> con equipos y clientes",
+    "quote1": "Escribo código en forma de <kbd>componentes</kbd>, organizado, optimizado, documentado y probado, en una arquitectura simple y escalable",
+    "quote2": "Las funciones entregadas están <kbd>centradas en las necesidades de los usuarios</kbd>, fáciles de descubrir y usar.",
+    "quote3": "Estoy interesado en <kbd>compartir</kbd>, <kbd>discutir</kbd> y <kbd>document</kbd> las especificaciones y opciones técnicas.",
+    "profile": "Perfil",
+    "leader": "Líder técnico, desarrollo front-end",
+    "manage": "Gestión y desarrollo de proyectos internacionales de TI.",
+    "ci": "Integración continua",
+    "agile": "Métodos ágiles",
+    "skills": "Competencias"
   },
-  "about": {
-    "title": "A proposito",
-    "introduction1": "Aquí encontrarás mi trabajo de los últimos 25 años",
-    "introduction2": "Los ablums y colecciones de textos aparecen en un orden aleatorio de acuerdo con sus visitas",
-    "introduction3": "Todas las canciones y textos son trabajos en progreso, pueden cambiar en cualquier momento",
-    "introduction4": "Puede solicitar más por correo electrónico, tendrá que ver qué es posible (CD, MP3, Libros, etc.)",
-    "introduction5": "Si desea apoyar mi trabajo, contácteme por correo electrónico"
-  },
-  "music": {
-    "title": "Música",
-    "search": "Buscar",
-    "album": "Álbum",
-    "back_to_albums": "Volver a los álbumes"
-  },
-  "literature": {
-    "title": "Literatura"
+  "profile-head": {
+    "developer": "{\"Desarrollador\": \"Front-end\"}"
   },
   "error": {
     "back_to_home": "Volver a la página de inicio",
     "page_not_found": "La página solicitada no existe",
     "other_error": "Se ha producido un error"
-  },
-  "profile-head": {
-    "developer": "Desarrollador Front-end"
   }
 }

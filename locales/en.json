@@ -4,15 +4,29 @@
     "light_theme": "Light theme"
   },
   "links": {
-    "home": "Home",
-    "about": "About",
-    "music": "Music",
-    "literature": "Literature"
+    "profile": "Profile",
+    "projects": "Projetcs",
+    "blog": "Blog",
+    "links": "Links"
   },
   "profile": {
-    "title": "Bienvenue"
+    "lead": "<kbd>Source of proposal</kbd>, <kbd>ambitious</kbd> and <kbd>demanding</kbd> in the projects undertaken, <kbd>available</kbd> and <kbd>pro-active</ kbd> with teams and customers",
+    "quote1": "I'm writing code as <kbd>components</kbd>, organized, optimized, documented and tested, in a simple and scalable architecture.",
+    "quote2": "The delivered functionalities are <kbd>centered on the needs of the users</kbd>, easy to discover and use.",
+    "quote3": "I am keen to <kbd>share</kbd>, <kbd>discuss</kbd> and <kbd>document</kbd> the specifications and technical choices.",
+    "profile": "Profile",
+    "leader": "Technical leader, Front-end development",
+    "manage": "Management and development of international IT projects",
+    "ci": "Continuous integration",
+    "agile": "Agile methods",
+    "skills": "Skills"
   },
   "profile-head": {
-    "developer": "Front-end Developer"
+    "developer": "{\"Front-end\": \"Developer\"}"
+  },
+  "error": {
+    "back_to_home": "Back to home",
+    "page_not_found": "404 Not Found",
+    "other_error": "An error occurred"
   }
 }

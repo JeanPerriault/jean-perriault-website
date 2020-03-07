@@ -38,7 +38,7 @@ section.test2 {
 <script>
 export default {
   data: () => ({
-    profile: ["lead", "manage", "ci", "agile"]
+    profile: ["leader", "manage", "ci", "agile"]
   }),
   computed: {
     setTitleBackground() {}

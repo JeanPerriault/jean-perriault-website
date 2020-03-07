@@ -1,10 +1,9 @@
 <template>
   <section class="test0">
-    <h2>
-      <kbd>Force de proposition</kbd>, <kbd>ambitieux</kbd> et
-      <kbd>exigeant</kbd> dans les projets entrepris,
-      <kbd>disponible</kbd> et <kbd>pro-actif</kbd> avec les équipes et les clients
-    </h2>
+    <p
+      class="display-1"
+      v-html="$t('profile.lead')">
+    </p>
   </section>
 </template>
 

@@ -13,15 +13,8 @@
         style="font-style: italic; margin-left: 5px; padding-left: 5px;"
       >
         <p v-html="$t('profile.quote1')"></p>
-        <p>
-          Les fonctionnalités délivrées sont
-          <kbd>centrées sur les besoins des utilisateurs</kbd>, facile à
-          découvrir et à utiliser.
-        </p>
-        <p>
-          J'ai a coeur de <kbd>partager</kbd>, de <kbd>discuter</kbd> et de
-          <kbd>documenter</kbd> les spécifications et choix techniques.
-        </p>
+        <p v-html="$t('profile.quote2')"></p>
+        <p v-html="$t('profile.quote3')"></p>
       </blockquote>
     </div>
   </section>

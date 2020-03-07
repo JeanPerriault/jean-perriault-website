@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Compétences</h1>
+    <h1>{{ $t("profile.skills") }}</h1>
     <div class="containter">
       <div v-for="(item, index) in skills" :key="index" class="row2">
         <div class="name">

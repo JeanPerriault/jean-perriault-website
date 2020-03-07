@@ -4,22 +4,29 @@
     "light_theme": "Thème clair"
   },
   "links": {
-    "home": "Accueil",
-    "about": "À propos",
-    "music": "Musique",
-    "literature": "Littérature"
+    "profile": "Profil",
+    "projects": "Projets",
+    "blog": "Blog",
+    "links": "Liens"
   },
   "profile": {
-    "title": "Bienvenue",
-    "introduction": "Bienvenue sur le site de Jùan Alézaïs, El Jùanch0",
-    "quote1": "Je produis un code sous forme de <kbd>composants</kbd>, organisé, optimisé, documenté et testé, dans une architecture simple et évolutive.",
+    "lead": "<kbd>Force de proposition</kbd>, <kbd>ambitieux</kbd> et <kbd>exigeant</kbd> dans les projets entrepris, <kbd>disponible</kbd> et <kbd>pro-actif</kbd> avec les équipes et les clients",
+    "quote1": "J'écris un code sous forme de <kbd>composants</kbd>, organisé, optimisé, documenté et testé, dans une architecture simple et évolutive.",
+    "quote2": "Les fonctionnalités délivrées sont <kbd>centrées sur les besoins des utilisateurs</kbd>, facile à découvrir et à utiliser.",
+    "quote3": "J'ai à coeur de <kbd>partager</kbd>, de <kbd>discuter</kbd> et de <kbd>documenter</kbd> les spécifications et choix techniques.",
     "profile": "Profil",
-    "lead": "Leader technique, développement Front-end",
+    "leader": "Leader technique, développement Front-end",
     "manage": "Gestion et développement de projets informatiques internationaux",
     "ci": "Intégration continue",
-    "agile": "Méthodes agiles"
+    "agile": "Méthodes agiles",
+    "skills": "Compétences"
   },
   "profile-head": {
     "developer": "{\"Développeur\": \"Front-end\"}"
+  },
+  "error": {
+    "back_to_home": "Retour à la page d'accueil",
+    "page_not_found": "La page demandée n'existe pas",
+    "other_error": "Une erreur s'est produite"
   }
 }
