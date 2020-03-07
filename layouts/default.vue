@@ -125,8 +125,12 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Jean Perriault',
-      locale: this.$store.state.locale
+      title: 'Jean Perriault'
+    }
+  },
+  computed: {
+    locale() {
+      return this.$store.state.locale
     }
   },
   methods: {
