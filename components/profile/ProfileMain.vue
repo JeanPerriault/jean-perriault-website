@@ -1,10 +1,12 @@
 <template>
-  <div class="profile-main">
-    <ProfileMainLead></ProfileMainLead>
-    <ProfileMainQuote></ProfileMainQuote>
-    <ProfileMainProfile></ProfileMainProfile>
-    <ProfileMainSkills></ProfileMainSkills>
-  </div>
+  <v-container>
+    <div class="profile-main">
+      <ProfileMainLead></ProfileMainLead>
+      <ProfileMainQuote></ProfileMainQuote>
+      <ProfileMainSkills></ProfileMainSkills>
+      <ProfileMainProfile></ProfileMainProfile>
+    </div>
+  </v-container>
 </template>
 
 <style lang="scss">
@@ -12,7 +14,7 @@
   margin-top: 100px;
 
   section {
-    margin: 20px;
+    margin: 30px 0;
     padding: 20px;
     border-radius: 2px;
   }
@@ -23,9 +25,6 @@
 </style>
 
 <script>
-const mq = window.matchMedia('(prefers-color-scheme: dark)')
-// console.error(mq)
-
 import ProfileMainLead from "~/components/profile/ProfileMainLead";
 import ProfileMainProfile from "~/components/profile/ProfileMainProfile";
 import ProfileMainQuote from "~/components/profile/ProfileMainQuote";
@@ -37,12 +36,6 @@ export default {
     ProfileMainProfile,
     ProfileMainQuote,
     ProfileMainSkills
-  },
-  data: () => ({
-    profile: ["lead", "manage", "ci", "agile"]
-  }),
-  computed: {
-    setTitleBackground() {}
   }
 };
 </script>

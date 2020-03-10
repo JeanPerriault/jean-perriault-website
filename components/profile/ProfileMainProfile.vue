@@ -1,9 +1,14 @@
 <template>
-  <section class="test2">
-    <div class="profile-main-profile">
+  <section class="profile-main-profile">
+    <div class="profile-main-profile-div">
       <h1>{{ $t("profile.profile") }}</h1>
       <ul>
-        <li v-for="item in profile" :key="item">
+        <li
+          class="title"
+          v-for="(item, index) in profile"
+          :key="index"
+          :style="{ marginLeft: (index+1) * 10 + 'px'}"
+        >
           {{ $t("profile." + item) }}
         </li>
       </ul>
@@ -12,23 +17,23 @@
 </template>
 
 <style lang="scss">
-section.test2 {
-  background: salmon;
-  border: 1px solid tomato;
-  // perspective: 1000px;
-  // perspective-origin: right;
-  // text-align: right;
-}
-
 .profile-main-profile {
   background: salmon;
-  // transition: 0.3s;
-  // transform: rotate(-14deg);
+  border: 1px solid tomato;
 }
 
-.profile-main-profile:hover {
-  // transition: 0.3s;
-  // transform: rotate(0);
+.profile-main-profile-div {
+  background: salmon;
+  transform: rotate(2deg);
+}
+
+.profile-main-profile-div:hover {
+  transition: all .5s ease-in-out;
+  transform: rotate(0deg);
+  li {
+    transition: all .5s ease-in-out;
+    margin-left: 10px !important;
+  }
 }
 
 @media only screen and (min-width: 768px) {

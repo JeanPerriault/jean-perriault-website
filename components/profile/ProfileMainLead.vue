@@ -1,5 +1,5 @@
 <template>
-  <section class="test0">
+  <section class="profile-main-lead">
     <p
       class="display-1"
       v-html="$t('profile.lead')">
@@ -8,18 +8,8 @@
 </template>
 
 <style lang="scss">
-section.test0 {
+.profile-main-lead {
   text-align: center;
-}
-.profile-quote {
-  display: flex;
-  background: $section-background-color;
-  // transition: 0.3s;
-  // transform: rotateY(40deg);
-}
-.profile-quote:hover {
-  // transition: 0.3s;
-  // transform: rotateY(0);
 }
 
 @media only screen and (min-width: 768px) {
@@ -29,7 +19,7 @@ section.test0 {
 <script>
 export default {
   data: () => ({
-    profile: ["lead", "manage", "ci", "agile"]
+    profile: ['lead', 'manage', 'ci', 'agile']
   }),
   computed: {
     setTitleBackground() {}

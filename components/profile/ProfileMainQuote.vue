@@ -1,27 +1,28 @@
 <template>
-  <section class="test1">
+  <section class="profile-main-quote">
     <div class="profile-quote">
       <div style="padding-top: 15px;">
         <v-icon>mdi-format-quote-close</v-icon>
       </div>
       <div
         style="border-left: 3px solid white; height: 130px; margin-top:22px;margin-left:4px;"
-      ></div>
+      >
+      </div>
 
       <blockquote
         class="blockquote"
         style="font-style: italic; margin-left: 5px; padding-left: 5px;"
       >
-        <p v-html="$t('profile.quote1')"></p>
-        <p v-html="$t('profile.quote2')"></p>
-        <p v-html="$t('profile.quote3')"></p>
+        <p class="headline" v-html="$t('profile.quote1')"></p>
+        <p class="headline" v-html="$t('profile.quote2')"></p>
+        <p class="headline" v-html="$t('profile.quote3')"></p>
       </blockquote>
     </div>
   </section>
 </template>
 
-<style lang="scss">
-section.test1 {
+<style lang="scss" scoped>
+.profile-main-quote {
   background: $section-background-color;
   border: 1px solid $section-border-color;
   perspective: 1000px;
