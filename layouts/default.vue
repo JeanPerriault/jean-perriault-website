@@ -81,6 +81,7 @@
           <v-list-item-title>Switch drawer (click me)</v-list-item-title>
         </v-list-item>
       </v-list>
+      <profile-head-contact></profile-head-contact>
     </v-navigation-drawer>
 
     <!-- Footer -->
@@ -110,11 +111,17 @@
 <script>
 import DrawerMenu from '~/components/DrawerMenu';
 import LanguageSwitcher from '~/components/LanguageSwitcher';
+import ProfileHeadContact from "~/components/profile/ProfileHeadContact";
+
+// Check system dark mode
+const mq = window.matchMedia('(prefers-color-scheme: dark)')
+// console.error(mq)
 
 export default {
   components: {
     DrawerMenu,
-    LanguageSwitcher
+    LanguageSwitcher,
+    ProfileHeadContact
   },
   data () {
     return {
